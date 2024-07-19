@@ -15,9 +15,7 @@ Ardustim is an engine simulator built on the Arduino platform. It produces simul
 
 <div align="center"><img src="https://github.com/speeduino/Ardu-Stim/raw/master/docs/demo.gif" alt="Ardu-Stim Demo" width="80%" /></div>
 
-This version is a fork of the original by David Andruczyk [https://gitlab.com/libreems-suite/ardu-stim](https://gitlab.com/libreems-suite/ardu-stim) and is intended to provide a more modern, cross platform GUI as well as continued expansion of the trigger pattern library. It was primarily developed for use by the Speeduino community, but can be utilised for testing virtually any aftermarket ECU system
-
-It is designed to run on an Arduino Nano, but will also work with Arduino Uno and Mega boards. 
+This version is a fork of the fork of the original by David Andruczyk [https://gitlab.com/libreems-suite/ardu-stim](https://gitlab.com/libreems-suite/ardu-stim) and is intended to make firmware installation work on Mega.
 
 ## Wiring
 
@@ -68,7 +66,7 @@ Intended hardware platform is the Arduino Nano or Uno.
 ### GUI Installation steps
 
 ```bash
-$ git clone https://github.com/speeduino/Ardu-Stim.git
+$ git clone https://github.com/Addictorator/Ardu-Stim.git
 $ cd Ardu-Stim/UI
 $
 $ npm install electron-rebuild -g
