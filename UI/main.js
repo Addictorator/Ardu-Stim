@@ -124,14 +124,14 @@ ipcMain.on('uploadFW', (e, args) => {
   if(process.platform == "win32") { executableName = executableName + '.exe'; } //This must come after the configName line above
 
   //var firmwareFile = __dirname + "/firmwares/m328p.hex";
-  var firmwareFile = __dirname + "/firmwares/nano.hex";
+  var firmwareFile = __dirname + "/firmwares/mega.hex";
   firmwareFile = firmwareFile.replace('app.asar',''); //This is important for allowing the binary to be found once the app is packaed into an asar
 
   var hexFile = 'flash:w:' + firmwareFile + ':i';
 
   //var execArgs = ['-v', '-pm328p', '-C', configName, '-carduino', '-b 57600', '-P', args.port, '-D', '-U', hexFile];
-  var execArgs = ['-v', '-patmega328p', '-C', configName, '-carduino', '-b 115200', '-D', '-P', args.port, '-D', '-U', hexFile];
-  var execArgs_old = ['-v', '-patmega328p', '-C', configName, '-carduino', '-b 57600', '-D', '-P', args.port, '-D', '-U', hexFile];
+  var execArgs = ['-v', '-patmega2560p', '-C', configName, '-carduino', '-b 115200', '-D', '-P', args.port, '-D', '-U', hexFile];
+  var execArgs_old = ['-v', '-patmega2560p', '-C', configName, '-carduino', '-b 57600', '-D', '-P', args.port, '-D', '-U', hexFile];
 
   console.log(executableName);
   //const child = spawn(executableName, execArgs);
